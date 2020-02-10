@@ -1,0 +1,10 @@
+p,
+h1,
+h2,
+h3,
+li  {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  color: white;
+}

@@ -68,7 +68,7 @@ class BlogPostTemplate extends React.Component {
         <div
           className="post-hero"
           style={{
-            backgroundColor: '#007ACC',
+            backgroundColor: 'black',
             backgroundImage: `url("${post.metadata.hero.imgix_url}?w=2000")`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',

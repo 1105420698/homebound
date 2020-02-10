@@ -1,12 +1,13 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { StaticQuery, graphql } from 'gatsby'
 
-import { rhythm, scale } from '../utils/typography'
+import { rhythm } from '../utils/typography'
 
 // Import typefaces
 import 'typeface-montserrat'
 import 'typeface-merriweather'
+
+import '../styles/layout'
 
 export default ({ children, location }) => (
   <StaticQuery
@@ -37,7 +38,7 @@ export default ({ children, location }) => (
         header = (
           <div
             style={{
-              backgroundColor: '#007ACC',
+              backgroundColor: 'black',
               backgroundImage: `url("${homgePageHero}?w=2000")`,
               backgroundSize: 'cover',
               backgroundPosition: 'right',
@@ -52,7 +53,7 @@ export default ({ children, location }) => (
         header = (
           <div
             style={{
-              backgroundColor: '#007ACC',
+              backgroundColor: 'black',
               backgroundImage: `url("${homgePageHero}?w=2000")`,
               backgroundSize: 'cover',
               backgroundPosition: 'right',
