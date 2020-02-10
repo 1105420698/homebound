@@ -8,3 +8,7 @@ li  {
   -o-font-smoothing: antialiased;
   color: white;
 }
+
+body {
+  background-color: black;
+}
