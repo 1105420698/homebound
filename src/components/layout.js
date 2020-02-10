@@ -7,7 +7,7 @@ import { rhythm } from '../utils/typography'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
-import '../styles/layout'
+import '../styles/layout.css'
 
 export default ({ children, location }) => (
   <StaticQuery
