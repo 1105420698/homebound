@@ -50,28 +50,18 @@ export default ({ children, location }) => (
         )
       } else {
         header = (
-          <h3
+          <div
             style={{
-              fontFamily: 'Montserrat, sans-serif',
-              marginTop: 0,
-              marginBottom: rhythm(-1),
-              marginLeft: 'auto',
-              marginRight: 'auto',
-              maxWidth: rhythm(24),
-              paddingTop: `${rhythm(1.5)}`,
+              backgroundColor: '#007ACC',
+              backgroundImage: `url("${homgePageHero}?w=2000")`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'right',
+              width: '100%',
+              height: rhythm(14),
+              position: 'relative',
+              marginBottom: `${rhythm(1.5)}`,
             }}
-          >
-            <Link
-              style={{
-                boxShadow: 'none',
-                textDecoration: 'none',
-                color: 'inherit',
-              }}
-              to={'/'}
-            >
-              {siteTitle}
-            </Link>
-          </h3>
+          />
         )
       }
       return (
