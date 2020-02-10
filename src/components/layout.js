@@ -2,8 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { StaticQuery, graphql } from 'gatsby'
 
-import cosmicjsLogo from '../../static/cosmicjs.svg'
-import gatsbyLogo from '../../static/gatsby.png'
 import { rhythm, scale } from '../utils/typography'
 
 // Import typefaces
@@ -16,7 +14,6 @@ export default ({ children, location }) => (
       query LayoutQuery {
         cosmicjsSettings(slug: { eq: "general" }) {
           metadata {
-            site_heading
             homepage_hero {
               imgix_url
             }
@@ -25,7 +22,6 @@ export default ({ children, location }) => (
       }
     `}
     render={data => {
-      const siteTitle = data.cosmicjsSettings.metadata.site_heading
       const homgePageHero =
         data.cosmicjsSettings.metadata.homepage_hero.imgix_url
       let header
@@ -50,31 +46,7 @@ export default ({ children, location }) => (
               position: 'relative',
               marginBottom: `${rhythm(1.5)}`,
             }}
-          >
-            <h1
-              style={{
-                ...scale(1.3),
-                position: 'absolute',
-                textAlign: 'center',
-                left: 0,
-                right: 0,
-                top: rhythm(4),
-                marginTop: '0',
-                height: rhythm(2.5),
-              }}
-            >
-              <Link
-                style={{
-                  boxShadow: 'none',
-                  textDecoration: 'none',
-                  color: 'inherit',
-                }}
-                to={'/'}
-              >
-                {siteTitle}
-              </Link>
-            </h1>
-          </div>
+          />
         )
       } else {
         header = (
@@ -122,44 +94,7 @@ export default ({ children, location }) => (
               padding: `0 20px 80px 0`,
             }}
           >
-            powered by&nbsp;
-            <a
-              target="_blank"
-              href="https://gatsbyjs.org"
-              style={{
-                color: '#191919',
-                boxShadow: 'none',
-              }}
-            >
-              <img
-                src={gatsbyLogo}
-                alt="Gatsby JS"
-                style={{
-                  width: '20px',
-                  margin: '0 4px -3px 2px',
-                }}
-              />
-              <strong>Gatsby</strong>
-            </a>
-            &nbsp;and&nbsp;
-            <a
-              target="_blank"
-              href="https://cosmicjs.com"
-              style={{
-                color: '#191919',
-                boxShadow: 'none',
-              }}
-            >
-              <img
-                src={cosmicjsLogo}
-                alt="Cosmic JS"
-                style={{
-                  width: '18px',
-                  margin: '0 4px -2px 5px',
-                }}
-              />
-              <strong>Cosmic JS</strong>
-            </a>
+            2020 Runkai Zhang
           </footer>
         </div>
       )
