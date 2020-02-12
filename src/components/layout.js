@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 
 import { rhythm } from '../utils/typography'
 
@@ -31,38 +31,19 @@ export default ({ children, location }) => (
         rootPath = __PATH_PREFIX__ + `/`
         postsPath = __PATH_PREFIX__ + `/posts`
       }
-
-      if (location.pathname === rootPath || location.pathname === postsPath) {
-        header = (
-          <div
-            style={{
-              backgroundColor: 'black',
-              backgroundImage: `url("${homgePageHero}?w=2000")`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'right',
-              width: '100%',
-              height: rhythm(14),
-              position: 'relative',
-              marginBottom: `${rhythm(1.5)}`,
-            }}
-          />
-        )
-      } else {
-        header = (
-          <div
-            style={{
-              backgroundColor: 'black',
-              backgroundImage: `url("${homgePageHero}?w=2000")`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'right',
-              width: '100%',
-              height: rhythm(14),
-              position: 'relative',
-              marginBottom: `${rhythm(1.5)}`,
-            }}
-          />
-        )
-      }
+      header = (
+        <div
+          style={{
+            backgroundColor: 'black',
+            backgroundImage: `url("${homgePageHero}?w=2000")`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'right',
+            width: '100%',
+            height: rhythm(14),
+            position: 'relative'
+          }}
+        />
+      )
       return (
         <div>
           {header}
@@ -74,16 +55,22 @@ export default ({ children, location }) => (
               padding: `0 ${rhythm(3 / 4)} ${rhythm(1.5)} ${rhythm(3 / 4)}`,
               minHeight: 'calc(100vh - 42px)',
             }}
+            
+            className="hero"
           >
+            <div className="menu">
+              <Link to="/">Home</Link>
+              <Link to="/download">Download</Link>
+            </div>
             {children}
           </div>
           <footer
             style={{
               textAlign: 'center',
-              padding: `0 20px 80px 0`,
+              padding: `0 20px 15px 0`,
             }}
           >
-            2020 Runkai Zhang
+            2020 Runkai Zhang, Undertale by Toby Fox
           </footer>
         </div>
       )
