@@ -12,13 +12,21 @@ module.exports = {
     {
       resolve: 'gatsby-source-cosmicjs',
       options: {
-        bucketSlug: process.env.COSMIC_BUCKET,
-        objectTypes: ['posts','settings'],
+        bucketSlug: `homebound`,
+        objectTypes: ['posts', 'settings'],
         apiAccess: {
-          read_key: process.env.COSMIC_READ_KEY,
-        }
-      }
+          read_key: `ZHp9PE7bhAXC7NVo3UxyxfcYZyVef11wLInecPxIVf973wTftG`,
+        },
+      },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
