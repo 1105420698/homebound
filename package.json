@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-blog-cosmicjs",
-  "description": "Gatsby Blog Cosmic JS",
-  "version": "2.0.0",
-  "author": "Jazib Sawar <jazibsawar@gmail.com>",
+  "name": "homebound-official-website",
+  "description": "homebound official website",
+  "version": "1.0.0",
+  "author": "Runkai Zhang <me@runkaizhang.xyz>",
   "bugs": {
-    "url": "https://github.com/jazibsawar/gatsby-blog-cosmicjs/issues"
+    "url": "https://github.com/1105420698/homebound/issues"
   },
   "dependencies": {
     "gatsby": "^2.15.18",

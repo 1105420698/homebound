@@ -12,17 +12,17 @@ module.exports = {
     {
       resolve: 'gatsby-source-cosmicjs',
       options: {
-        bucketSlug: process.env.COSMIC_BUCKET,
+        bucketSlug: `homebound`,
         objectTypes: ['posts','settings'],
         apiAccess: {
-          read_key: process.env.COSMIC_READ_KEY,
+          read_key: `ZHp9PE7bhAXC7NVo3UxyxfcYZyVef11wLInecPxIVf973wTftG`,
         }
       }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-135014439-2`,
       },
     },
     {
