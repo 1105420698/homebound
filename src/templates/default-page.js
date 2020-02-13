@@ -6,10 +6,9 @@ export default function Template({ data }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
-    <Layout location={location}>
+    <Layout location={frontmatter.path}>
       <div className="changelog-container">
         <div className="changelog-content">
-          <h1>{frontmatter.title}</h1>
           <div
             className="changelog-content"
             dangerouslySetInnerHTML={{ __html: html }}
@@ -25,7 +24,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         path
-        title
       }
     }
   }

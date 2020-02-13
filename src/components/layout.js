@@ -40,7 +40,7 @@ export default ({ children, location }) => (
             backgroundPosition: 'right',
             width: '100%',
             height: rhythm(14),
-            position: 'relative'
+            position: 'relative',
           }}
         />
       )
@@ -55,12 +55,12 @@ export default ({ children, location }) => (
               padding: `0 ${rhythm(3 / 4)} ${rhythm(1.5)} ${rhythm(3 / 4)}`,
               minHeight: 'calc(100vh - 42px)',
             }}
-            
             className="hero"
           >
             <div className="menu">
               <Link to="/">Home</Link>
               <Link to="/download">Download</Link>
+              <Link to="/changelog">Changelog</Link>
             </div>
             {children}
           </div>

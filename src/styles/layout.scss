@@ -1,0 +1,64 @@
+p,
+h1,
+h2,
+h3,
+li,
+footer {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  color: white;
+}
+
+h2 {
+  margin-top: 15px;
+}
+
+body {
+  background-color: black;
+}
+
+div {
+  color: white;
+  background-color: black;
+}
+
+a {
+  color: yellow;
+}
+
+.hero {
+  position: relative;
+}
+
+.menu {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu a {
+  margin-right: 50px;
+}
+
+blockquote {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid lighten(black, 40%);
+  font-family: 'Roboto', serif;
+  font-weight: 100;
+  background-color: lighten($color: #000000, $amount: 10);
+  margin-bottom: 15px;
+}
+
+a.download {
+  text-decoration: none;
+  color: #fff;
+  background: lighten($color: #000000, $amount: 10);
+  padding: 8px 10px;
+  border-radius: 3px;
+  display: block;
+  width: 175px;
+  text-align: center;
+  z-index: 100;
+  transition: opacity 0.8s ease;
+}

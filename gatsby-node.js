@@ -12,7 +12,7 @@ exports.createPages = ({ graphql, actions, reporter }) => {
 
   return new Promise((resolve, reject) => {
     const blogPost = path.resolve('./src/templates/blog-post.js')
-    const changelog = path.resolve('./src/templates/CHANGELOG.js')
+    const defaultPage = path.resolve('./src/templates/default-page.js')
     resolve(
       graphql(
         `
@@ -69,7 +69,7 @@ exports.createPages = ({ graphql, actions, reporter }) => {
         each(pages, page => {
           createPage({
             path: page.node.frontmatter.path,
-            component: changelog,
+            component: defaultPage,
             context: {}, // additional data can be passed via context
           })
         })
