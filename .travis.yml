@@ -12,5 +12,5 @@ node_js:
 
 script:
   - yarn
-  - yarn lint
+  - yarn upgrade
   - yarn build
