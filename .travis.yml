@@ -12,5 +12,4 @@ node_js:
 
 script:
   - yarn
-  - yarn upgrade
   - yarn build
