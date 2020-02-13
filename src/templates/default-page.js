@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import SEO from '../components/SEO'
 
 export default function Template({ data }) {
   const siteTitle = get(data, 'cosmicjsSettings.metadata.site_title')
@@ -11,6 +12,10 @@ export default function Template({ data }) {
   return (
     <Layout location={frontmatter.path}>
       <Helmet title={`${frontmatter.title} | ${siteTitle}`} />
+      <SEO
+        title={`${frontmatter.title} | ${siteTitle}`}
+        url={frontmatter.path}
+      />
       <div className="container">
         <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
       </div>

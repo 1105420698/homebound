@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://homebound.runkaizhang.xyz`,
+    url: 'https://homebound.runkaizhang.xyz',
+    title: 'HOMEBOUND',
+    description: 'An UNDERTALE inspired game.',
   },
   plugins: [
     `gatsby-plugin-offline`,

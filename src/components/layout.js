@@ -7,7 +7,7 @@ import { rhythm } from '../utils/typography'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
-export default ({ children, location }) => (
+export default ({ children }) => (
   <StaticQuery
     query={graphql`
       query LayoutQuery {
