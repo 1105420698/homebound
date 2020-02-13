@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://homebound.runkaizhang.xyz`,
+  },
   plugins: [
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
@@ -40,5 +43,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
   ],
 }

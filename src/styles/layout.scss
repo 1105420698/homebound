@@ -3,7 +3,9 @@ h1,
 h2,
 h3,
 li,
-footer {
+footer,
+ul,
+div {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
@@ -12,6 +14,7 @@ footer {
 
 h2 {
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 body {
@@ -46,14 +49,14 @@ blockquote {
   border-left: 0.2em solid lighten(black, 40%);
   font-family: 'Roboto', serif;
   font-weight: 100;
-  background-color: lighten($color: #000000, $amount: 10);
+  background-color: lighten($color: black, $amount: 10);
   margin-bottom: 15px;
 }
 
 a.download {
   text-decoration: none;
-  color: #fff;
-  background: lighten($color: #000000, $amount: 10);
+  color: white;
+  background: lighten($color: black, $amount: 10);
   padding: 8px 10px;
   border-radius: 3px;
   display: block;

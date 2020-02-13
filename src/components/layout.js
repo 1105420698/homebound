@@ -23,15 +23,7 @@ export default ({ children, location }) => (
     render={data => {
       const homgePageHero =
         data.cosmicjsSettings.metadata.homepage_hero.imgix_url
-      let header
-
-      let rootPath = `/`
-      let postsPath = `/posts`
-      if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
-        rootPath = __PATH_PREFIX__ + `/`
-        postsPath = __PATH_PREFIX__ + `/posts`
-      }
-      header = (
+      let header = (
         <div
           style={{
             backgroundColor: 'black',
