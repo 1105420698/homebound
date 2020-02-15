@@ -1,4 +1,10 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://homebound.runkaizhang.xyz`,
+    url: 'https://homebound.runkaizhang.xyz',
+    title: 'HOMEBOUND',
+    description: 'An UNDERTALE inspired game.',
+  },
   plugins: [
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
@@ -13,12 +19,20 @@ module.exports = {
       resolve: 'gatsby-source-cosmicjs',
       options: {
         bucketSlug: `homebound`,
-        objectTypes: ['posts','settings'],
+        objectTypes: ['posts', 'settings'],
         apiAccess: {
           read_key: `ZHp9PE7bhAXC7NVo3UxyxfcYZyVef11wLInecPxIVf973wTftG`,
-        }
-      }
+        },
+      },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -31,5 +45,7 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
   ],
 }

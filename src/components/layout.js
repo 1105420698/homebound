@@ -7,7 +7,7 @@ import { rhythm } from '../utils/typography'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
-export default ({ children, location }) => (
+export default ({ children }) => (
   <StaticQuery
     query={graphql`
       query LayoutQuery {
@@ -23,15 +23,7 @@ export default ({ children, location }) => (
     render={data => {
       const homgePageHero =
         data.cosmicjsSettings.metadata.homepage_hero.imgix_url
-      let header
-
-      let rootPath = `/`
-      let postsPath = `/posts`
-      if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
-        rootPath = __PATH_PREFIX__ + `/`
-        postsPath = __PATH_PREFIX__ + `/posts`
-      }
-      header = (
+      let header = (
         <div
           style={{
             backgroundColor: 'black',
@@ -40,7 +32,7 @@ export default ({ children, location }) => (
             backgroundPosition: 'right',
             width: '100%',
             height: rhythm(14),
-            position: 'relative'
+            position: 'relative',
           }}
         />
       )
@@ -55,12 +47,12 @@ export default ({ children, location }) => (
               padding: `0 ${rhythm(3 / 4)} ${rhythm(1.5)} ${rhythm(3 / 4)}`,
               minHeight: 'calc(100vh - 42px)',
             }}
-            
             className="hero"
           >
             <div className="menu">
               <Link to="/">Home</Link>
               <Link to="/download">Download</Link>
+              <Link to="/changelog">Changelog</Link>
             </div>
             {children}
           </div>

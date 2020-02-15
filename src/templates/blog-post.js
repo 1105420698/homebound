@@ -7,6 +7,7 @@ import { graphql } from 'gatsby'
 import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import { rhythm, scale } from '../utils/typography'
+import SEO from '../components/SEO'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -40,7 +41,7 @@ class BlogPostTemplate extends React.Component {
           }
         `}
         </style>
-        <Helmet title={`${post.title} | ${siteTitle}`} />
+        <SEO title={`${post.title} | ${siteTitle}`} url={location} />
         <div
           style={{
             marginTop: rhythm(1.4),
