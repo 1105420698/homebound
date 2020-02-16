@@ -20,9 +20,11 @@ Nothing here yet, sorry.
 ## 02-16-2020
 
 For MacOS:
-<a href="https://homeboundrunkai.s3.us-east-2.amazonaws.com/Historical+Builds/HOMEBOUND-2020-02-16.zip" class="download" download>HOMEBOUND-2020-02-16.zip</a>
+<a href="https://homeboundrunkai.s3.us-east-2.amazonaws.com/Historical+Builds/MacOS/HOMEBOUND-2020-02-16.zip" class="download" download>HOMEBOUND-2020-02-16.zip</a>
+For Windows:
+<a href="https://homeboundrunkai.s3.us-east-2.amazonaws.com/Historical+Builds/Windows/HOMEBOUND-2020-02-16.exe" class="download" download>HOMEBOUND-2020-02-16.exe</a>
 
 ## 02-11-2020
 
 For MacOS:
-<a href="https://homeboundrunkai.s3.us-east-2.amazonaws.com/Historical+Builds/HOMEBOUND-2020-02-11.zip" class="download" download>HOMEBOUND-2020-02-11.zip</a>
+<a href="https://homeboundrunkai.s3.us-east-2.amazonaws.com/Historical+Builds/MacOS/HOMEBOUND-2020-02-11.zip" class="download" download>HOMEBOUND-2020-02-11.zip</a>
