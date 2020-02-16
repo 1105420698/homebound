@@ -5,6 +5,13 @@ title: 'CHANGELOG'
 
 # Changelog
 
+## [Historical] - 2020-02-16
+
+### Added
+
+- Add two more stages for Chara.
+- Add dialogs and cutscenes.
+
 ## [Historical] - 2020-02-11
 
 ### Fixed
