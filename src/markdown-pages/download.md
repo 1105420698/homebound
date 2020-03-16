@@ -17,6 +17,11 @@ Nothing here yet, sorry.
 
 > Warning: historical builds are extremely unstable and does not follow semver versioning properly!
 
+## 03-16-2020
+
+For MacOS:
+<a href="https://homeboundrunkai.s3.us-east-2.amazonaws.com/Historical+Builds/MacOS/HOMEBOUND-2020-03-16.zip" class="download" download>HOMEBOUND-2020-03-16.zip</a>
+
 ## 02-17-2020
 
 For MacOS:

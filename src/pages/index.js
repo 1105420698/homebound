@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import get from 'lodash/get'
-import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
 import Bio from '../components/Bio'
@@ -11,10 +10,6 @@ import SEO from '../components/SEO'
 
 class BlogIndex extends React.Component {
   render() {
-    const siteTitle = get(
-      this,
-      'props.data.cosmicjsSettings.metadata.site_title'
-    )
     const posts = get(this, 'props.data.allCosmicjsPosts.edges')
     const author = get(this, 'props.data.cosmicjsSettings.metadata')
     const location = get(this, 'props.location')
